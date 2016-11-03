@@ -5,3 +5,7 @@ zuul:
       path: /service-one/**
       serviceId: service-one
       retryable: true
+    service-two:
+      path: /service-two/**
+      serviceId: service-two
+      retryable: true
