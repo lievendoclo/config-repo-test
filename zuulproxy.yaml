@@ -9,3 +9,7 @@ zuul:
       path: /service-two/**
       serviceId: service-two
       retryable: true
+    service-devoxx:
+      path: /service-devoxx/**
+      serviceId: service-one
+      retryable: true
