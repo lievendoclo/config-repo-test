@@ -1,15 +1,11 @@
 zuul:
   retryable: true
   routes:
+    discovery:
+      path: /eureka/**
+      serviceId: discovery
+      retryable: true
     service-one:
       path: /service-one/**
-      serviceId: service-one
-      retryable: true
-    service-two:
-      path: /service-two/**
-      serviceId: service-two
-      retryable: true
-    service-devoxx:
-      path: /service-devoxx/**
       serviceId: service-one
       retryable: true
